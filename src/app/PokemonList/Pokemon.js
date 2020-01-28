@@ -19,7 +19,7 @@ export function Pokemon(props) {
         setDetail({...detail, selected: {name: name, url: url}})
     };
     let split = props?.data[index]?.url?.split('/');
-    const img = split !== undefined ? `${imgUrl}${split[6]}.png` : props.data[index].sprites.front_default;
+    const img = split !== undefined ? `${imgUrl}${split[6]}.png` : props.data[index]?.sprites?.front_default;
     return (
         <ListItem button style={style} key={index} onClick={handleClick}>
             <ListItemAvatar>
