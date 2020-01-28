@@ -7,6 +7,7 @@ import InfiniteLoader from "react-window-infinite-loader";
 import SearchIcon from "@material-ui/icons/Search";
 import {InputBase} from "@material-ui/core";
 import {useStyles} from "../AppCss";
+import AutoSizer from "react-virtualized-auto-sizer";
 
 const context = 'pokemon';
 
@@ -79,26 +80,31 @@ export function PokemonList(props) {
                 {/*</form>*/}
             </div>
 
-            <InfiniteLoader
-                isItemLoaded={isItemLoaded}
-                itemCount={pokemonState.count}
-                loadMoreItems={getListPokemon}
-            >
-                {({onItemsRendered, ref}) => (
-                    <List
-                        itemData={pokemonState.results}
-                        height={650}
-                        width={"100%"}
-                        itemSize={50}
-                        itemCount={pokemonState.count}
-                        onItemsRendered={onItemsRendered}
-                        ref={ref}
-                    >
-                        {Pokemon}
-                    </List>
-
-                )}
-            </InfiniteLoader>
+            <div className={classes.boxAutoSizer}>
+                <InfiniteLoader
+                    isItemLoaded={isItemLoaded}
+                    itemCount={pokemonState.count}
+                    loadMoreItems={getListPokemon}
+                >
+                    {({onItemsRendered, ref}) => (
+                        <AutoSizer>
+                            {({height, width}) => (
+                                <List
+                                    itemData={pokemonState.results}
+                                    height={height}
+                                    width={width}
+                                    itemSize={50}
+                                    itemCount={pokemonState.count}
+                                    onItemsRendered={onItemsRendered}
+                                    ref={ref}
+                                >
+                                    {Pokemon}
+                                </List>
+                            )}
+                        </AutoSizer>
+                    )}
+                </InfiniteLoader>
+            </div>
         </div>
     )
 }

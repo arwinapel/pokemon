@@ -61,6 +61,15 @@ export const useStyles = makeStyles(theme => ({
         border: "1px solid",
         borderRadius: "10px",
     },
+    centerOfPage: {
+        display: 'flex',
+        justifyContent: "center",
+        alignItems: "center",
+        height: '100vh'
+    },
+    boxAutoSizer: {
+        height: "85vh",
+    },
     whiteFontColor: {
         color: "#fff"
     },
