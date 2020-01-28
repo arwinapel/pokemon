@@ -1,6 +1,7 @@
 {
   "name": "pokemon",
   "version": "0.1.0",
+  "homepage": "https://detikinijuga.com:8443/pokemon",
   "private": true,
   "dependencies": {
     "@material-ui/core": "^4.9.0",

@@ -26,7 +26,7 @@ export function PokemonList(props) {
 
     const getListPokemon = async () => {
         try {
-            const url = search ? `${context}/${search}` : pokemonState.next || `${context}?limit=${LIMIT}`;
+            const url = search ? `${context}/${search.toLowerCase()}` : pokemonState.next || `${context}?limit=${LIMIT}`;
             const res = await AxiosService.get(url);
             let dataPokemon;
             if (search !== '') {
