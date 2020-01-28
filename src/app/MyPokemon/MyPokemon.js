@@ -16,7 +16,6 @@ export function MyPokemon(props) {
         setDetail({...detail, myPokemon: data})
     };
 
-
     return (
         <ListItem button style={style} key={index} onClick={handleClick}>
             <ListItemAvatar>

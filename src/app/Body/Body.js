@@ -1,4 +1,4 @@
-import React, {useContext, useState} from "react";
+import React, {useContext, useEffect, useState} from "react";
 import {useStyles} from "../AppCss";
 import {Menu} from "../AppConst";
 import {PokemonList} from "../PokemonList/PokemonList";
@@ -12,6 +12,11 @@ export function Body(props) {
     const classes = useStyles();
     const {detail} = useContext(MyPokemonContext);
     const [error, setError] = useState(null);
+
+    useEffect(() => {
+        document.title = detail.selected.name ? detail.selected.name.replace(/\b\w/, v => v.toUpperCase()) : props.openedMenu;
+        console.log(document.title)
+    }, [props.openedMenu, detail.selected.name]);
 
     const handleClose = () => {
         setError(null);
