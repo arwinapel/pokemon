@@ -67,6 +67,9 @@ export const useStyles = makeStyles(theme => ({
         alignItems: "center",
         height: '100vh'
     },
+    capitalize: {
+        textTransform: 'capitalize'
+    },
     boxAutoSizer: {
         height: "85vh",
     },
