@@ -1,24 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6605f0cd-bbed-4367-9674-d861986c6578" name="Default Changelist" comment="initial commit">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/pokemon.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/App.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/AppConst.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/AppCss.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/service/AxiosService.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/App.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+    <list default="true" id="6605f0cd-bbed-4367-9674-d861986c6578" name="Default Changelist" comment="add app folder, context, assets">
+      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/pokeball.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/Body/Body.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/DetailPokemon/DetailPokemon.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/DetailPokemon/Moves.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/Header/Header.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/MyPokemon/MyPokemon.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/MyPokemon/MyPokemonList.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/PokemonList/Pokemon.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/PokemonList/PokemonList.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/SideBar/SideBar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/context/Detail/MyPokemonContext.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -121,8 +118,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1580123375671</updated>
-      <workItem from="1580123377570" duration="32665000" />
+      <workItem from="1580123377570" duration="33148000" />
     </task>
+    <task id="LOCAL-00001" summary="initial commit and remove unused import">
+      <created>1580181352014</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1580181352014</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -130,7 +135,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="initial commit" />
+    <MESSAGE value="initial commit and remove unused import" />
+    <MESSAGE value="add app folder, context, assets" />
+    <option name="LAST_COMMIT_MESSAGE" value="add app folder, context, assets" />
   </component>
   <component name="WindowStateProjectService">
     <state x="184" y="123" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1580180442251">
@@ -145,10 +152,10 @@
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="465" y="324" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.23.1440.877@0.23.1440.877" timestamp="1580181291293" />
-    <state x="303" y="64" key="CommitChangelistDialog2" timestamp="1580181324276">
+    <state x="303" y="64" key="CommitChangelistDialog2" timestamp="1580181889993">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="303" y="64" key="CommitChangelistDialog2/0.23.1440.877@0.23.1440.877" timestamp="1580181324276" />
+    <state x="303" y="64" key="CommitChangelistDialog2/0.23.1440.877@0.23.1440.877" timestamp="1580181889993" />
     <state width="1398" height="375" key="GridCell.Tab.0.bottom" timestamp="1580181042064">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
@@ -169,6 +176,10 @@
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="221" y="100" key="SettingsEditor/0.23.1440.877@0.23.1440.877" timestamp="1580142790331" />
+    <state x="320" y="201" key="Vcs.Push.Dialog.v2" timestamp="1580181387204">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="320" y="201" key="Vcs.Push.Dialog.v2/0.23.1440.877@0.23.1440.877" timestamp="1580181387204" />
     <state x="378" y="218" width="683" height="486" key="find.popup" timestamp="1580176986309">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
