@@ -87,7 +87,7 @@ export function PokemonList(props) {
                 {({onItemsRendered, ref}) => (
                     <List
                         itemData={pokemonState.results}
-                        height={700}
+                        height={650}
                         width={"100%"}
                         itemSize={50}
                         itemCount={pokemonState.count}

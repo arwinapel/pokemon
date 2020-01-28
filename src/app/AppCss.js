@@ -1,6 +1,6 @@
 import {fade, makeStyles} from "@material-ui/core/styles";
 
-const drawerWidth = 240;
+export const drawerWidth = 240;
 
 export const useStyles = makeStyles(theme => ({
     root: {
@@ -12,18 +12,6 @@ export const useStyles = makeStyles(theme => ({
             flexShrink: 0,
         },
     },
-    appBar: {
-        [theme.breakpoints.up('sm')]: {
-            width: `calc(100% - ${drawerWidth}px)`,
-            marginLeft: drawerWidth,
-        },
-    },
-    menuButton: {
-        marginRight: theme.spacing(2),
-        [theme.breakpoints.up('sm')]: {
-            display: 'none',
-        },
-    },
     toolbar: theme.mixins.toolbar,
     drawerPaper: {
         width: drawerWidth,
@@ -32,9 +20,7 @@ export const useStyles = makeStyles(theme => ({
         flexGrow: 1,
         padding: theme.spacing(3),
     },
-    capitalize: {
-        textTransform: 'capitalize'
-    },
+
     center_grid: {
         textAlign: "center"
     },
@@ -66,8 +52,6 @@ export const useStyles = makeStyles(theme => ({
     },
     inputInput: {
         padding: theme.spacing(1, 1, 1, 7),
-        // transition: theme.transitions.create('width'),
-        // width: '100%',
     },
     secondaryHeading: {
         fontSize: theme.typography.pxToRem(15),

@@ -5,13 +5,18 @@ import {MyPokemonContext} from "../../context/Detail/MyPokemonContext";
 import {useStyles} from "../AppCss";
 import {imgUrl} from "../AppConst";
 
+const URL = process.env.REACT_APP_API_URL + "/pokemon";
+
 export function Pokemon(props) {
     const classes = useStyles();
     const {index, style} = props;
     const {detail, setDetail} = useContext(MyPokemonContext);
 
     const handleClick = () => {
-        setDetail({...detail, selected: props.data[index]})
+        // console.log(props.data[index])
+        const name = props.data[index].name;
+        const url = props.data[index].url ? props.data[index].url : `${URL}/${props.data[index].id}`;
+        setDetail({...detail, selected: {name: name, url: url}})
     };
     let split = props?.data[index]?.url?.split('/');
     const img = split !== undefined ? `${imgUrl}${split[6]}.png` : props.data[index].sprites.front_default;

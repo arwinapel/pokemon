@@ -21,7 +21,6 @@ export const DetailPokemon = React.memo((props) => {
         try {
             const res = await AxiosService.get(props.url);
             setDetailState(res);
-            console.log(res)
         } catch (e) {
             console.log(e)
         }

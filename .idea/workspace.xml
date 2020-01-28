@@ -1,21 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6605f0cd-bbed-4367-9674-d861986c6578" name="Default Changelist" comment="add app folder, context, assets">
-      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/img/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/img/pokeball.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/Body/Body.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/DetailPokemon/DetailPokemon.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/DetailPokemon/Moves.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/Header/Header.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/MyPokemon/MyPokemon.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/MyPokemon/MyPokemonList.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/PokemonList/Pokemon.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/PokemonList/PokemonList.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/SideBar/SideBar.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/context/Detail/MyPokemonContext.js" afterDir="false" />
+    <list default="true" id="6605f0cd-bbed-4367-9674-d861986c6578" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/AppCss.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/AppCss.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/DetailPokemon/DetailPokemon.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/DetailPokemon/DetailPokemon.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/Header/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Header/Header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/PokemonList/Pokemon.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/PokemonList/Pokemon.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/PokemonList/PokemonList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/PokemonList/PokemonList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/SideBar/SideBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/SideBar/SideBar.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,6 +70,16 @@
       <envs />
       <method v="2" />
     </configuration>
+    <configuration name="build" type="js.build_tools.npm" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="build" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <configuration name="start" type="js.build_tools.npm" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="start" />
@@ -92,6 +95,7 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="npm.build" />
       <item itemvalue="npm.start" />
       <item itemvalue="npm.test" />
     </list>
@@ -118,7 +122,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1580123375671</updated>
-      <workItem from="1580123377570" duration="33148000" />
+      <workItem from="1580123377570" duration="38496000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit and remove unused import">
       <created>1580181352014</created>
@@ -127,7 +131,14 @@
       <option name="project" value="LOCAL" />
       <updated>1580181352014</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="add app folder, context, assets">
+      <created>1580181910766</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1580181910766</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -140,10 +151,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="add app folder, context, assets" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="184" y="123" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1580180442251">
+    <state x="230" y="163" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1580184017185">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="184" y="123" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.877@0.23.1440.877" timestamp="1580180442251" />
+    <state x="230" y="163" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.877@0.23.1440.877" timestamp="1580184017185" />
     <state x="454" y="271" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1580129112899">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
@@ -152,26 +163,26 @@
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="465" y="324" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.23.1440.877@0.23.1440.877" timestamp="1580181291293" />
-    <state x="303" y="64" key="CommitChangelistDialog2" timestamp="1580181889993">
+    <state x="303" y="64" key="CommitChangelistDialog2" timestamp="1580192109132">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="303" y="64" key="CommitChangelistDialog2/0.23.1440.877@0.23.1440.877" timestamp="1580181889993" />
-    <state width="1398" height="375" key="GridCell.Tab.0.bottom" timestamp="1580181042064">
+    <state x="303" y="64" key="CommitChangelistDialog2/0.23.1440.877@0.23.1440.877" timestamp="1580192109132" />
+    <state width="1398" height="264" key="GridCell.Tab.0.bottom" timestamp="1580190094974">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="375" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1580181042064" />
-    <state width="1398" height="375" key="GridCell.Tab.0.center" timestamp="1580181042063">
+    <state width="1398" height="264" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1580190094974" />
+    <state width="1398" height="264" key="GridCell.Tab.0.center" timestamp="1580190094973">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="375" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1580181042063" />
-    <state width="1398" height="375" key="GridCell.Tab.0.left" timestamp="1580181042063">
+    <state width="1398" height="264" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1580190094973" />
+    <state width="1398" height="264" key="GridCell.Tab.0.left" timestamp="1580190094973">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="375" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1580181042063" />
-    <state width="1398" height="375" key="GridCell.Tab.0.right" timestamp="1580181042064">
+    <state width="1398" height="264" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1580190094973" />
+    <state width="1398" height="264" key="GridCell.Tab.0.right" timestamp="1580190094973">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="375" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1580181042064" />
+    <state width="1398" height="264" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1580190094973" />
     <state x="221" y="100" key="SettingsEditor" timestamp="1580142790331">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
@@ -188,9 +199,9 @@
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state width="600" height="424" key="javadoc.popup/0.23.1440.877@0.23.1440.877" timestamp="1580129139879" />
-    <state x="385" y="213" width="670" height="676" key="search.everywhere.popup" timestamp="1580181179979">
+    <state x="385" y="213" width="670" height="676" key="search.everywhere.popup" timestamp="1580191815943">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="385" y="213" width="670" height="676" key="search.everywhere.popup/0.23.1440.877@0.23.1440.877" timestamp="1580181179979" />
+    <state x="385" y="213" width="670" height="676" key="search.everywhere.popup/0.23.1440.877@0.23.1440.877" timestamp="1580191815943" />
   </component>
 </project>

@@ -26,12 +26,12 @@ export function SideBar(props) {
     const renderMenu = (text, idx) => {
         if (text === Menu[1]) {
             return (
-                <Badge key={idx} invisible={detail.myPokemon.length === 0} badgeContent={detail.myPokemon.length}
-                       color="primary">
-                    <ListItem button onClick={handleClick(text)}>
+                <ListItem key={idx} button onClick={handleClick(text)}>
+                    <Badge invisible={detail.myPokemon.length === 0} badgeContent={detail.myPokemon.length}
+                           color="primary">
                         <ListItemText primary={text}/>
-                    </ListItem>
-                </Badge>
+                    </Badge>
+                </ListItem>
             )
         } else {
             return (
@@ -45,7 +45,7 @@ export function SideBar(props) {
     const drawer = (
         <div>
             <div className={[classes.toolbar, classes.center_grid].join(" ")}>
-                <img src={process.env.PUBLIC_URL + '/assets/img/logo.png'} width={120} alt={"logo"} />
+                <img src={process.env.PUBLIC_URL + '/assets/img/logo.png'} width={120} alt={"logo"}/>
             </div>
             <Divider/>
             <List>
